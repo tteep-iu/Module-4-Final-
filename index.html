@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Series Seeker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <section id="navigation">
+      <nav>
+        <div class="container nav__container">
+          <div class="nav__brand">
+            <img class="nav__logo" src="/assets/Logo w-noname.png" alt="" />
+            <span class="nav__title">Series Seeker</span>
+          </div>
+
+          <!-- <ul class="nav__links">
+            <li><a href="#" class="btn__nav">Home</a></li>
+            <li class="nav__item--dropdown">
+              <button
+                class="btn__nav"
+                id="charactersBtn"
+                aria-expanded="false"
+                aria-controls="charDropdown"
+              >
+                Characters ▾
+              </button>
+              <ul id="charDropdown" class="dropdown" hidden></ul>
+            </li>
+            <li><a href="#" class="btn__nav">About</a></li>
+          </ul> -->
+
+          <button class="nav__toggle" id="navToggle">☰</button>
+          <ul class="nav__links" id="navLinks">
+            <li><a href="#" id="homeLink" class="btn__nav">Home</a></li>
+            <li class="nav__item--dropdown">
+              <button
+                class="btn__nav"
+                id="charactersBtn"
+                aria-expanded="false"
+                aria-controls="charDropdown"
+              >
+                Characters ▾
+              </button>
+              <ul id="charDropdown" class="dropdown" hidden></ul>
+            </li>
+            <li><a href="about.html" class="btn__nav">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <main>
+      <section id="landing">
+        <div class="container">
+          <div class="row">
+            <div class="search__bar">
+              <input
+                type="text"
+                placeholder="Search characters..."
+                class="search__bar-input"
+              />
+            </div>
+
+            <h1 class="characters__title">Featured Characters</h1>
+
+            <div class="character__grid">
+              <div class="character__card">
+                <img
+                  src="assets/pino-jelly-guess-who-i-am.jpg"
+                  alt="Character name"
+                  class="character__card-img"
+                />
+                <h3>Character Name</h3>
+                <p>Series Name</p>
+                <p>$00.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Series Seeker. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
